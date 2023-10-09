@@ -34,7 +34,7 @@ int main() {
 
 举一个命令行中使用 GCC 编译的例子，你使用任何 IDE 之类的工具编译运行也是可以的。
 
-```
+```shell
 $ gcc runme.c -o runme
 $ ./runme
 flag{HAHA_C_1s_E4sy!}
