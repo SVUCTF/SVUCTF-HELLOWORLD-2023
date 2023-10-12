@@ -1,0 +1,7 @@
+set noswapfile
+set showcmd
+
+noremap : <Nop>
+noremap Q <Nop>
+noremap g <Nop>
+noremap ZZ <Nop>
