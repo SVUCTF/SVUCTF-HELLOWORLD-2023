@@ -1,9 +1,9 @@
-FROM ghcr.io/svuctf/base/xinetd:alpine
+FROM tsl0922/ttyd:latest
+
+RUN echo $GZCTF_FLAG > /root/flag && unset GZCTF_FLAG && \
+    apt-get update -y && apt-get install vim man-db -y && unminimize
 
 COPY vimrc /root/.vimrc
-COPY init.sh /init.sh
-COPY xinetd.conf /etc/xinetd.conf
+COPY vimrc /root/.vimrc.bak
 
-RUN apk add vim --no-cache && chmod +x /init.sh
-
-CMD ["xinetd", "-dontfork"]
+CMD ["ttyd", "-W", "vim", "/root/.vimrc.bak"]

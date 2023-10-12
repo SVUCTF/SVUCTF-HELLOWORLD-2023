@@ -1,7 +1,13 @@
+if &compatible
+  set nocompatible
+endif
+
+set backspace=indent,eol,start
 set noswapfile
-set showcmd
+set nottybuiltin
 
 noremap : <Nop>
 noremap Q <Nop>
 noremap g <Nop>
 noremap ZZ <Nop>
+noremap !! <Nop>
