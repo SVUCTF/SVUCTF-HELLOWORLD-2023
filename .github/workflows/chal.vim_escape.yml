@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 env:
-  TYPE: pwn
+  TYPE: misc
   NAME: vim_escape
   REGISTRY: ghcr.io
 
