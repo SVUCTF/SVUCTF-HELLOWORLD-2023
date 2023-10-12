@@ -5,7 +5,7 @@ on:
     branches: ["main"]
     paths:
       - "!**/README.md"
-      - "challenges/pwn/vim_escape/build/**"
+      - "challenges/misc/vim_escape/build/**"
   workflow_dispatch:
 
 env:
