@@ -1,8 +1,8 @@
 FROM tsl0922/ttyd:latest
 
-RUN echo $GZCTF_FLAG > /root/flag && unset GZCTF_FLAG && \
-    apt-get update -y && apt-get install vim man-db -y && yes | unminimize
-COPY vimrc /root/.vimrc
-COPY vimrc /root/.vimrc.bak
+RUN apt-get update -y && apt-get install vim man-db -y && yes | unminimize
 
-CMD ["ttyd", "-W", "vim", "/root/.vimrc.bak"]
+COPY --chmod=500 init.sh /etc/init.sh
+COPY --chmod=400 vimrc /root/.vimrc
+
+CMD ["/etc/init.sh"]
