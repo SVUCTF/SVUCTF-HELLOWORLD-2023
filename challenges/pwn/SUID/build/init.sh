@@ -1,6 +1,7 @@
 #!/bin/sh
 
 echo $GZCTF_FLAG > /home/ctf/flag
+chown 400 /home/ctf/flag
 chown -R root:root /home/ctf/flag
 unset GZCTF_FLAG
 
