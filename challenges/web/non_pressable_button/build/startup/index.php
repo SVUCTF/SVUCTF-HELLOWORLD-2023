@@ -16,7 +16,7 @@
 		</div>
 		<div class="content" id="startup_game">
 			<img src="img/game.jpg" />
-			<h1><?php file_get_contents("/flag"); ?></h1>
+			<h1><?php echo file_get_contents("/flag"); ?></h1>
 			<div id="startup_game_g">
 				抵制不良游戏, 拒绝盗版游戏, 注意自我保护, 谨防受骗上当, 适度游戏益脑, 沉迷游戏伤身, 合理安排时间, 享受健康生活。<br>
 				审批文号: 国新出审[2020]1407号 ISBN 978-7-498-07852-0 出版单位: 华东师范大学电子音像出版社有限公司<br>
