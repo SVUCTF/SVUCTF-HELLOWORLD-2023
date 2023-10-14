@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 
 void init() {
@@ -17,10 +18,12 @@ int main() {
     puts("Please Input Your Number:");
     scanf("%d", &v2);
 
-    if (v2 == v1)
+    if (v2 == v1) {
+        setuid(0);
         system("/bin/sh");
-    else
+    } else {
         puts("HACKER!!!");
-
+    }
+    
     return 0;
 } 

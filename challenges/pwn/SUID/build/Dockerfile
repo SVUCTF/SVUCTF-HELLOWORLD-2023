@@ -21,12 +21,14 @@ RUN chmod +x /init.sh && \
     cp /bin/sh /home/ctf/bin && \
     cp /bin/ls /home/ctf/bin && \
     cp /bin/cat /home/ctf/bin && \
-    mkdir /home/ctf/.secret
+    mkdir /home/ctf/.secret && \
+    cp /usr/bin/id /home/ctf/bin && \
+    apk add coreutils --no-cache
 
 COPY --from=builder /lib/x86_64-linux-gnu/libc.so.6 /home/ctf/lib/x86_64-linux-gnu/
 COPY --from=builder /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 /home/ctf/lib64/
 COPY --chown=ctf:ctf --chmod=400 myapp.c /home/ctf/.secret/myapp.c
-COPY --chown=ctf:ctf --chmod=500 myapp /home/ctf/myapp
+COPY --chown=root:root myapp /home/ctf/myapp
 RUN chmod +s /home/ctf/myapp
 
 CMD ["xinetd", "-dontfork"]
