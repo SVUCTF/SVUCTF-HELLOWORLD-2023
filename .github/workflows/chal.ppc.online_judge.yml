@@ -29,9 +29,13 @@ jobs:
         with:
           target: x86_64-unknown-linux-musl
 
+      - name: Install musl-tools
+        run: |
+          sudo apt update
+          sudo apt install musl-tools
+
       - name: Compile
         run: |
-          apt install musl-tools
           cd challenges/${{ env.TYPE }}/${{ env.NAME }}/build
           cargo build --release --target x86_64-unknown-linux-musl
 
