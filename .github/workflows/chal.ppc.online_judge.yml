@@ -23,9 +23,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Setup rust toolchain and compile
+      
+      - name: Setup rust toolchain
         uses: actions-rust-lang/setup-rust-toolchain@v1
+
+      - name: Compile
         run: |
           cd challenges/${{ env.TYPE }}/${{ env.NAME }}/build
           cargo build --release
