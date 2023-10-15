@@ -36,7 +36,7 @@ for pos in range(42):
             "problem_id": 0,
             "source_code": payload.replace("%POSITION%", str(pos)).replace("%GUESS%", guess),
         }
-        resp = requests.post(url=url, json=data)
+        resp = session.post(url=url, json=data)
         resp_json = resp.json()
 
         if resp_json["result"] == "Accepted":
