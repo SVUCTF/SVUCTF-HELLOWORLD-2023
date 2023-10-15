@@ -1,0 +1,79 @@
+{
+  "server": {
+    "bind_address": "127.0.0.1",
+    "bind_port": 12345
+  },
+  "problems": [
+    {
+      "id": 0,
+      "name": "hello_world",
+      "cases": [
+        {
+          "input_file": "data/hello_world/1.in",
+          "answer_file": "data/hello_world/1.ans",
+          "time_limit": 2000000,
+          "memory_limit": 1048576
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "hello_world",
+      "cases": [
+        {
+          "input_file": "data/hello_world/1.in",
+          "answer_file": "data/hello_world/1.ans",
+          "time_limit": 2000000,
+          "memory_limit": 1048576
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "hello_world",
+      "cases": [
+        {
+          "input_file": "data/hello_world/1.in",
+          "answer_file": "data/hello_world/1.ans",
+          "time_limit": 2000000,
+          "memory_limit": 1048576
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Rust",
+      "file_name": "main.rs",
+      "command": [
+        "rustc",
+        "-C",
+        "opt-level=2",
+        "-o",
+        "%OUTPUT%",
+        "%INPUT%"
+      ]
+    },
+    {
+      "name": "C",
+      "file_name": "main.c",
+      "command": [
+        "gcc",
+        "-o",
+        "%OUTPUT%",
+        "%INPUT%"
+      ]
+    },
+    {
+      "name": "Go",
+      "file_name": "main.go",
+      "command": [
+        "go",
+        "build",
+        "-o",
+        "%OUTPUT%",
+        "%INPUT%"
+      ]
+    }
+  ]
+}
