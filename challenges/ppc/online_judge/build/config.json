@@ -43,18 +43,6 @@
   ],
   "languages": [
     {
-      "name": "Rust",
-      "file_name": "main.rs",
-      "command": [
-        "rustc",
-        "-C",
-        "opt-level=2",
-        "-o",
-        "%OUTPUT%",
-        "%INPUT%"
-      ]
-    },
-    {
       "name": "C",
       "file_name": "main.c",
       "command": [
@@ -65,11 +53,10 @@
       ]
     },
     {
-      "name": "Go",
-      "file_name": "main.go",
+      "name": "CPP",
+      "file_name": "main.cpp",
       "command": [
-        "go",
-        "build",
+        "g++",
         "-o",
         "%OUTPUT%",
         "%INPUT%"
