@@ -1,11 +1,10 @@
-FROM rust:latest
+FROM alpine:latest
 
-RUN apt-get update && apt-get install -y \
-    golang-go gcc
+RUN apk add --no-cache gcc musl-dev
 
 WORKDIR /app
 
-COPY target/release/oj /app/oj
+COPY target/x86_64-unknown-linux-musl/release/oj /app/oj
 COPY config.json /app/config.json
 COPY data/ /app/data/
 COPY --chmod=500 init.sh /etc/init.sh
