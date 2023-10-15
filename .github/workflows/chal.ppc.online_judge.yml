@@ -21,11 +21,11 @@ jobs:
       packages: write
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repository and setup rust toolchain
         uses: actions/checkout@v3
+        uses: actions-rust-lang/setup-rust-toolchain@v1
 
       - name: Compile
-        uses: actions-rust-lang/setup-rust-toolchain@v1
         run: |
           cd challenges/${{ env.TYPE }}/${{ env.NAME }}/build
           cargo build --release
