@@ -11,7 +11,7 @@ with open("test.c") as f:
 
 # 提交代码
 data = {
-    "language": "C",  # 语言 C/Rust/Go
+    "language": "C",  # 语言 C / CPP
     "problem_id": 0,  # 问题 ID
     "source_code": code,
 }
