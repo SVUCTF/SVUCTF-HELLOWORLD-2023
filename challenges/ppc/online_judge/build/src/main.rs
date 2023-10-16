@@ -1,7 +1,7 @@
 use actix_web::middleware::Logger;
 use actix_web::{web, App, HttpServer};
 use clap::Parser;
-use oj::api::{get_jobs, post_jobs};
+use oj::api::{get_jobs, hello, post_jobs};
 use oj::Cli;
 use serde::{Deserialize, Serialize};
 
@@ -23,6 +23,7 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .app_data(web::Data::new(config.clone()))
             .wrap(Logger::default())
+            .service(hello)
             .service(get_jobs)
             .service(post_jobs)
     })

@@ -31,3 +31,8 @@ pub async fn get_jobs() -> impl Responder {
     log::info!(target: "get jobs", "get jobs list");
     HttpResponse::Ok().json(res)
 }
+
+#[get("/")]
+pub async fn hello() -> impl Responder {
+    HttpResponse::Ok().body("Hello AC...CTFer?")
+}
