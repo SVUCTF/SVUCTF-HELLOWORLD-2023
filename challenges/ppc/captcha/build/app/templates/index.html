@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>请证明您不是人类</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <h1>请完成验证，证明您不是人类</h1>
+    <p>我们怀疑您是人类，请完成机器人验证，给出以下算式的答案</p>
+    <p>（考虑到低算力型号，时限设置为两秒）</p>
+    <p id="expression">{{ expression }}</p>
+
+    <form id="answer-form">
+        <label for="answer">答案：</label>
+        <input id="answer" name="answer" required>
+        <button type="submit">我是机器人</button>
+    </form>
+
+    <p id="result-message"></p>
+    <p id="flag"></p>
+
+    <script>
+        $(document).ready(function () {
+            $("#answer-form").submit(function (e) {
+                e.preventDefault();
+                var userAnswer = $("#answer").val();
+
+                $.ajax({
+                    type: "POST",
+                    url: "/verify",
+                    data: {answer: userAnswer},
+                    success: function (data) {
+                        if (data.result === "correct") {
+                            $("#result-message").text("Correct!");
+                            $("#flag").text("Flag: " + data.flag);
+                        } else if (data.result === "incorrect") {
+                            $("#result-message").text("Incorrect. Try again.");
+                            $("#flag").text("");
+                        } else if (data.result === "Timeout") {
+                            $("#result-message").text("Timeout. Please try again.");
+                            $("#flag").text("");
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
