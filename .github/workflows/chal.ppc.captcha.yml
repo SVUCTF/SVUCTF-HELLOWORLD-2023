@@ -5,11 +5,11 @@ on:
     branches: ["main"]
     paths:
       - "!**/README.md"
-      - "challenges/web/captcha/build/**"
+      - "challenges/pcc/captcha/build/**"
   workflow_dispatch:
 
 env:
-  TYPE: web
+  TYPE: ppc
   NAME: captcha
   REGISTRY: ghcr.io
 
