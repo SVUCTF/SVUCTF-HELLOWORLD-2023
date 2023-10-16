@@ -14,33 +14,25 @@ void init() {
 }
 
 void menu() {
-
   puts("********************************\n"
        "+****** 猜数字游戏(1~100) *****+\n"
        "|*********** 0.EXIT ***********|\n"
        "+*********** 1.PLAY ***********+\n"
-       "********************************\n");
+       "********************************");
 }
 
 void game() {
-
   int sj = rand() % 999 + 1;
-  int cs = 0;
-  int n = 0;
+  int cs;
 
-  while (++n < 3) {
-
-    puts("Please Input:");
-    scanf("%d", &cs);
-    if (sj > cs)
-      puts("It's too small!");
-    else if (sj < cs)
-      puts("It's too big!");
-    else {
-      puts("YOU ARE TRUE!");
-      system("/bin/sh");
-      break;
-    }
+  puts("Please Input:");
+  scanf("%d", &cs);
+  if (sj > cs)
+    puts("It's too small!");
+  else if (sj < cs)
+    puts("It's too big!");
+  else {
+    system("/bin/sh");
   }
 }
 
@@ -49,24 +41,20 @@ int main() {
   int input;
 
   init();
+  menu();
   srand(time(0));
-  do {
-
-    menu();
-    scanf("%d", &input);
-    switch (input) {
-        case PLAY:
-          game();
-          break;
-        case EXIT:
-          puts("Exit!");
-          break;
-        default:
-          puts("Inputs Error, Please Try Again!");
-          break;
-    }
-
-  } while (input);
+  scanf("%d", &input);
+  switch (input) {
+  case PLAY:
+    game();
+    break;
+  case EXIT:
+    puts("Exit!");
+    break;
+  default:
+    puts("Inputs Error, Please Try Again!");
+    break;
+  }
 
   return 0;
 }
