@@ -1,16 +1,16 @@
-name: Challenge game
+name: Challenge missile_trail
 
 on:
   push:
     branches: ["main"]
     paths:
       - "!**/README.md"
-      - "challenges/web/game/build/**"
+      - "challenges/web/missile_trail/build/**"
   workflow_dispatch:
 
 env:
   TYPE: web
-  NAME: game
+  NAME: missile_trail
   REGISTRY: ghcr.io
 
 jobs:
