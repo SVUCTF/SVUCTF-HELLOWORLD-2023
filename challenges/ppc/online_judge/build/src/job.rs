@@ -9,17 +9,12 @@ use std::{
     time::Duration,
 };
 use std::string::ToString;
-use lazy_static::lazy_static;
 use wait_timeout::ChildExt;
 
 use crate::config::Language;
 use crate::{config, AppError, CaseResult, Response, RunResult, State};
 
 const TEMP_DIR_PREFIX: &str = "/tmp";
-lazy_static! {
-    static ref FLAG: String = env::var("GZCTF_FLAG").unwrap_or("flag{test_flag}".to_string());
-    static ref FLAG_LENGTH: usize = FLAG.len();
-}
 
 // the struct represent the json content from the post job http request
 #[derive(Debug, Serialize, Deserialize, Clone)]
@@ -208,11 +203,17 @@ impl Job {
         }
 
         // 返回部分 FLAG
+        let flag: String = env::var("GZCTF_FLAG").unwrap_or("flag{test_flag}".to_string());
+        let flag_length = flag.len();
+
         let problem_count = config.problems.len();
-        let flag_chunk_size = *FLAG_LENGTH / problem_count;
-        let start = (problem.id % problem_count) * flag_chunk_size;
-        let end = start + flag_chunk_size;
-        self.flag = FLAG[start..end].to_string();
+        let flag_chunk_size = flag_length / problem_count;
+        let start = problem.id * flag_chunk_size;
+        let mut end = start + flag_chunk_size;
+        if problem.id == problem_count - 1 {
+            end += flag_length % problem_count;
+        }
+        self.flag = flag[start..end].to_string();
 
         self.state = State::Finished;
         Ok(self.response())

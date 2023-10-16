@@ -18,11 +18,35 @@
     },
     {
       "id": 1,
-      "name": "hello_world",
+      "name": "palindrome_number",
       "cases": [
         {
-          "input_file": "data/hello_world/1.in",
-          "answer_file": "data/hello_world/1.ans",
+          "input_file": "data/palindrome_number/1.in",
+          "answer_file": "data/palindrome_number/1.ans",
+          "time_limit": 2000000,
+          "memory_limit": 1048576
+        },
+        {
+          "input_file": "data/palindrome_number/2.in",
+          "answer_file": "data/palindrome_number/2.ans",
+          "time_limit": 2000000,
+          "memory_limit": 1048576
+        },
+        {
+          "input_file": "data/palindrome_number/3.in",
+          "answer_file": "data/palindrome_number/3.ans",
+          "time_limit": 2000000,
+          "memory_limit": 1048576
+        },
+        {
+          "input_file": "data/palindrome_number/4.in",
+          "answer_file": "data/palindrome_number/4.ans",
+          "time_limit": 2000000,
+          "memory_limit": 1048576
+        },
+        {
+          "input_file": "data/palindrome_number/5.in",
+          "answer_file": "data/palindrome_number/5.ans",
           "time_limit": 2000000,
           "memory_limit": 1048576
         }
@@ -30,11 +54,71 @@
     },
     {
       "id": 2,
-      "name": "hello_world",
+      "name": "to_lower_case",
       "cases": [
         {
-          "input_file": "data/hello_world/1.in",
-          "answer_file": "data/hello_world/1.ans",
+          "input_file": "data/to_lower_case/1.in",
+          "answer_file": "data/to_lower_case/1.ans",
+          "time_limit": 2000000,
+          "memory_limit": 1048576
+        },
+        {
+          "input_file": "data/to_lower_case/2.in",
+          "answer_file": "data/to_lower_case/2.ans",
+          "time_limit": 2000000,
+          "memory_limit": 1048576
+        },
+        {
+          "input_file": "data/to_lower_case/3.in",
+          "answer_file": "data/to_lower_case/3.ans",
+          "time_limit": 2000000,
+          "memory_limit": 1048576
+        },
+        {
+          "input_file": "data/to_lower_case/4.in",
+          "answer_file": "data/to_lower_case/4.ans",
+          "time_limit": 2000000,
+          "memory_limit": 1048576
+        },
+        {
+          "input_file": "data/to_lower_case/5.in",
+          "answer_file": "data/to_lower_case/5.ans",
+          "time_limit": 2000000,
+          "memory_limit": 1048576
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "sum_multiples",
+      "cases": [
+        {
+          "input_file": "data/sum_multiples/1.in",
+          "answer_file": "data/sum_multiples/1.ans",
+          "time_limit": 2000000,
+          "memory_limit": 1048576
+        },
+        {
+          "input_file": "data/sum_multiples/2.in",
+          "answer_file": "data/sum_multiples/2.ans",
+          "time_limit": 2000000,
+          "memory_limit": 1048576
+        },
+        {
+          "input_file": "data/sum_multiples/3.in",
+          "answer_file": "data/sum_multiples/3.ans",
+          "time_limit": 2000000,
+          "memory_limit": 1048576
+        },
+        {
+          "input_file": "data/sum_multiples/4.in",
+          "answer_file": "data/sum_multiples/4.ans",
+          "time_limit": 2000000,
+          "memory_limit": 1048576
+        },
+        {
+          "input_file": "data/sum_multiples/5.in",
+          "answer_file": "data/sum_multiples/5.ans",
           "time_limit": 2000000,
           "memory_limit": 1048576
         }
