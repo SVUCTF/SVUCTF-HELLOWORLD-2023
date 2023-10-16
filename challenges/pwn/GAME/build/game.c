@@ -2,11 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-enum GAME {
-  EXIT,
-  PLAY,
-};
-
 void init() {
   setvbuf(stdout, 0, 2, 0);
   setvbuf(stdin, 0, 2, 0);
@@ -16,8 +11,6 @@ void init() {
 void menu() {
   puts("********************************\n"
        "+****** 猜数字游戏(1~100) *****+\n"
-       "|*********** 0.EXIT ***********|\n"
-       "+*********** 1.PLAY ***********+\n"
        "********************************");
 }
 
@@ -37,24 +30,9 @@ void game() {
 }
 
 int main() {
-
-  int input;
-
+  srand(time(0));
   init();
   menu();
-  srand(time(0));
-  scanf("%d", &input);
-  switch (input) {
-  case PLAY:
-    game();
-    break;
-  case EXIT:
-    puts("Exit!");
-    break;
-  default:
-    puts("Inputs Error, Please Try Again!");
-    break;
-  }
-
+  game();
   return 0;
 }
