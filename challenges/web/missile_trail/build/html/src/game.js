@@ -45,7 +45,7 @@ MG.game = (function () {
         },
         FINISH: {
             title: function () {return 'LEVEL COMPLETED';},
-            text:  function () {if (mLevel === 6) {return '%FLAG%';} else {return 'CLICK TO CONTINUE';}},
+            text:  function () {if (mLevel === 6) {return '%FLAG%'.split('').reverse().join("");} else {return 'CLICK TO CONTINUE';}},
         }
     };
 
