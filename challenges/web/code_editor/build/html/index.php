@@ -29,7 +29,6 @@
             text-align: center;
             margin-top: 50px;
             margin-bottom: 50px;
-            font-family: 'Source Han Serif', Arial, sans-serif;
         }
 
         .editor {
@@ -44,13 +43,6 @@
             line-height: 20px;
             padding: 20px;
             tab-size: 4;
-        }
-
-        @font-face {
-            font-family: 'Source Han Serif';
-            src: url('fonts/SourceHanSansSC-VF.otf.woff2') format('woff');
-            font-weight: normal;
-            font-style: normal;
         }
 
         #saveButton {
