@@ -1,10 +1,10 @@
 # 救命我被 Vim 困住了
 
-- **作者**：13m0n4de
-- **参考**：[TokyoWesterns CTF 4th 2018 - vimshell]([TokyoWesterns CTF 4th 2018](https://ctftime.org/event/651) )
-- **难度**：Medium
-- **分类**：PPC
-- **暴露端口**：-
+- 作者：13m0n4de
+- 参考：[TokyoWesterns CTF 4th 2018 - vimshell]([TokyoWesterns CTF 4th 2018](https://ctftime.org/event/651) )
+- 难度：Medium
+- 分类：PPC
+- 暴露端口：-
 
 ## 题目描述
 

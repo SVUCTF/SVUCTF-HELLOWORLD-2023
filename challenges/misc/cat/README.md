@@ -1,9 +1,9 @@
 # 很可爱的一只猫
 
-- **作者**：Wh1te_0range
-- **参考**：-
-- **难度**：Trivial
-- **分类**：misc
+- 作者：Wh1te_0range
+- 参考：-
+- 难度：Trivial
+- 分类：Misc
 
 ## 题目描述
 

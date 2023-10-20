@@ -1,6 +1,6 @@
-## Vigenere
+# Vigenere
 
-- **作者**：Only
+- 作者：Only
 - 参考：-
 - 难度：Easy
 - 分类：Crypto

@@ -1,10 +1,10 @@
-# 题目名
+# Baby-RSA
 
-- **作者**：Only
-- **参考**：xxxxxx
-- **难度**：Medium
-- **分类**：Crypto
-- **暴露端口**：-
+- 作者：Only
+- 参考：xxxxxx
+- 难度：Medium
+- 分类：Crypto
+- 暴露端口：-
 
 ## 题目描述
 

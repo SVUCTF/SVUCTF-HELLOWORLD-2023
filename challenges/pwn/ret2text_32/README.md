@@ -1,10 +1,10 @@
 # ret2text_32
 
-- **作者**：pn1fg
-- **参考**：[ctfwiki/ctf-challenges](https://github.com/ctf-wiki/ctf-challenges/tree/master/pwn/stackoverflow/ret2text/bamboofox-ret2text)
-- **难度** ：Easy
-- **分类**：Pwn
-- **暴露端口**：70
+- 作者：pn1fg
+- 参考：[ctfwiki/ctf-challenges](https://github.com/ctf-wiki/ctf-challenges/tree/master/pwn/stackoverflow/ret2text/bamboofox-ret2text)
+- 难度：Easy
+- 分类：Pwn
+- 暴露端口：70
 
 ## 题目描述
 

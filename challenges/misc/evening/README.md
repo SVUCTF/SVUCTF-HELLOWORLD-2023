@@ -1,9 +1,9 @@
 # 夜晚的星
 
-- **作者**：Wh1te_0range
-- **参考**：-
-- **难度**：Normal
-- **分类**：misc
+- 作者：Wh1te_0range
+- 参考：-
+- 难度：Normal
+- 分类：Misc
 
 ## 题目描述
 
