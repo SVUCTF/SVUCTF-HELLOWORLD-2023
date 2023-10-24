@@ -16,9 +16,9 @@ Netcat工具的使用
 
 Netcat：
 
-- 基本命令格式：nc 「ip address」 「port」
+- 基本命令格式：nc [ip address] [port]
 
-本题我们要做的就是`nc ip port`
+本题我们要做的就是 `nc ip port`
 
 ```shell
 nc 8.130.133.46 33986
@@ -26,7 +26,7 @@ nc 8.130.133.46 33986
 
 连接成功后，有无回显的话是要看出题人在远程服务器上的部署，本题就属于没有回显
 
-我们连上后是类似于一个shell的终端，出题人在部署题目的时候，会给一些linux的基本命令，比如`ls`，`cat`，`cd`等，我们可以直接`ls`查看当前目录下的文件，
+我们连上后是类似于一个shell的终端，出题人在部署题目的时候，会给一些linux的基本命令，比如 `ls`、`cat`、`cd` 等，我们可以直接 `ls` 查看当前目录下的文件，
 
 ```shell
 ls
@@ -38,12 +38,23 @@ lib32
 lib64
 ```
 
-本题就是如此，`ls`就可以看到当前目录下有个`flag`文件
+本题就是如此，`ls` 就可以看到当前目录下有个 `flag` 文件
 
-我们再用`cat`命令读取即可获得flag。
+我们再用 `cat` 命令读取即可获得flag。
 
 ```shell
-cat f*
+cat flag
 flag{ecf047ff-3be8-4d80-a5a0-fe62524f492d}
 ```
 
+---
+
+@13m0n4de：鉴于许多同学喜欢用浏览器打开 Pwn 题，这里还真就提供提供一个用浏览器做 Pwn 题的方法：
+
+![wtf](writeup/wtf.png)
+
+起初是测试赛时的 `test_nc`，我们发现直接点开平台上的按钮在浏览器中打开 Pwn 题环境，居然可以直接返回 FLAG，应该是浏览器没有严格要求返回包的 HTTP 报文格式。
+
+当时还以为是 Firefox-Nightly 的特性，但后来有选手说它们在 KALI 中自带的 Firefox 浏览器也可以，我们就去简单试验了一下，发现 Linux 上的 Firefox 和 Firefox-Nightly 都可以，而 Windows 里的 Firefox-Nightly 是不可以的。
+
+Chrome 则是各平台都不可以、Chromium 也是。
