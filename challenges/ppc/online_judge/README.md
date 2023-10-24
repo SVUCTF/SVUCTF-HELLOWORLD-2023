@@ -28,7 +28,7 @@
 
 @13m0n4de：「好好好」
 
-Hint：仔细阅读附件，flag 格式为 `flag{UUID}`，例如 `flag{7c89c43e-f3d2-406d-aa0e-87e97b027984}`，也就是 `^flag{[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}}$`
+> Hint：仔细阅读附件，flag 格式为 `flag{UUID}`，例如 `flag{7c89c43e-f3d2-406d-aa0e-87e97b027984}`，也就是 `^flag{[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}}$`
 
 
 ## 题目解析
@@ -212,9 +212,11 @@ for pos in range(42):
 
 在脚本中我把 C 语言程序中读取位置改成了 `%POSITION%`，猜解字符改成了 `%GUESS%`，在 Python 脚本中对它们进行替换后再发送，这样就可以实现自动猜解了。
 
-程序不太快，因为每次都需要编译 C 语言文件，但还有优化空间，比如通过了第零题 `[0] 输出 Hello World!` 是可以获取一部分 FLAG 的，并且 FLAG 的格式也比较确定，一些位置的字符猜解多余。
+程序不太快，因为每次都需要编译 C 语言文件，而且还有优化空间，比如通过了第零题 `[0] 输出 Hello World!` 是可以获取一部分 FLAG 的，并且 FLAG 的格式也比较确定，一些位置的字符猜解多余。
 
 但这样写代码看着干净，没那么追求速度，主要是给大家一个参考。
+
+![get_flag](writeup/images/get_flag.gif)
 
 ### 老实人解法
 
@@ -231,21 +233,21 @@ for pos in range(42):
 2. 转换成小写字母：[to_lower_case.c](writeup/to_lower_case.c)
 3. 倍数求和：[sum_multiples.c](writeup/sum_multiples.c)
 
-### 碎碎念
+## 碎碎念
 
-#### 干嘛不写个易用的客户端？
+### 干嘛不写个易用的客户端？
 
 ~~除去我确实懒以外~~，其实是想让同学们了解一些网络请求相关的知识，比如 JSON，HTTP 请求协议。
 
 大家在复现的时候也可以试试使用 PostMan、BurpSuite 等工具发送数据包，以后在写代码或者做 CTF 题时会经常用到。
 
-#### 有没有更快的解法？
+### 有没有更快的解法？
 
 理论是可以更快一些的，因为 GET `/jobs` 会返回全部的结果，所以我们不需要逐个处理返回，多线程发送多个猜解请求，最后再 GET 一次 `/jobs` 处理全部结果。
 
 但是，由于容器资源分配有限、OJ 系统代码不是异步等等原因，实际并不会快。
 
-#### writeup 文件夹里多出的文件是啥？
+### writeup 文件夹里多出的文件是啥？
 
 最开始的时候，这题支持很多种语言，包括 Rust、Go 之类的。
 
@@ -254,3 +256,17 @@ for pos in range(42):
 后来觉得不爽，加上了 CPP，这个不会太影响镜像大小。
 
 于是你能在 writeup 文件夹下看到遗留的 [solve_rust.py](writeup/solve_rust.py) 和 [solve_go.py](writeup/solve_go.py)，这是猜解脚本的 Rust 和 Go 语言版本。
+
+### 反弹 Shell ？
+
+本题并没有对提交的代码进行任何限制，对出网也是，所以完全可以把数据外带，或者干脆反弹 Shell。
+
+但不是这题的本意，因为这样就变成了另外的题型，可想了想还是把这种可能性留下了。
+
+想着如果有同学是这么做的也好啊，对大一新生来说是个学习的机会，可惜好像根本没人碰这题。
+
+总之这里有一些反弹 Shell 的资料，感兴趣的同学可以试一下。
+
+- [PayloadsAllTheThings - Reverse Shell Cheatsheet](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
+
+- [HackTricks - Shells](https://book.hacktricks.xyz/generic-methodologies-and-resources/shells/linux)
