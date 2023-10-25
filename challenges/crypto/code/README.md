@@ -2,7 +2,7 @@
 
 - 作者：Only
 - 参考：-
-- 难度：Medium
+- 难度：Normal
 - 分类：Crypto
 - 镜像：-
 - 端口：-

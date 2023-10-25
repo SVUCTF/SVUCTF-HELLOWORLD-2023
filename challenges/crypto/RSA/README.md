@@ -1,4 +1,4 @@
-# Rz-RSA
+# Ez-RSA
 
 - 作者：Only
 - 参考：-

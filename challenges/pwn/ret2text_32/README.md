@@ -2,7 +2,7 @@
 
 - 作者：pn1fg
 - 参考：[ctfwiki/ctf-challenges](https://github.com/ctf-wiki/ctf-challenges/tree/master/pwn/stackoverflow/ret2text/bamboofox-ret2text)
-- 难度：Easy
+- 难度：Normal
 - 分类：Pwn
 - 镜像：-
 - 端口：70

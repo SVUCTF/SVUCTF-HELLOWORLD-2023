@@ -2,7 +2,7 @@
 
 - 作者：pn1fg
 - 参考：W4terCTF 2023
-- 难度：Baby
+- 难度：Medium
 - 分类：Pwn
 - 镜像：-
 - 端口：70
