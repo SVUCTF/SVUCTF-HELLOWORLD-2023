@@ -254,7 +254,7 @@ io.interactive()
 更懒的你可以直接在命令行中：
 
 ```shell
->>> ./random && nc ip port
+$ ./random && nc ip port
 ```
 
 这是在命令行同时执行运行和 nc 两个操作，这样的打概率可以确保它们的随机数种子是一致的
