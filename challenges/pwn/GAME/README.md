@@ -4,6 +4,7 @@
 - 参考：-
 - 难度：Normal
 - 分类：Pwn
+
 - 暴露端口：70
 
 ## 题目描述
@@ -30,7 +31,6 @@ GAME: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, i
 
 ```shell
 $ checksec --file=GAME
-[*] '/home/pn1fg/文档/0xgame/GAME'
     Arch:     amd64-64-little
     RELRO:    Partial RELRO
     Stack:    No canary found
