@@ -24,7 +24,7 @@
 查看文件类型（`file` 命令）：
 
 ```shell
->>> file GAME
+$ file GAME
 GAME: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=9a14391da2604ebbffd3d7881f07cf0fa4bcf2e3, for GNU/Linux 3.2.0, not stripped
 ```
 
@@ -32,8 +32,8 @@ GAME: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, i
 
 查看保护机制（`checksec`命令）：
 
-```console
->>> checksec --file=GAME
+```shell
+$ checksec --file=GAME
 [*] '/home/pn1fg/文档/0xgame/GAME'
     Arch:     amd64-64-little
     RELRO:    Partial RELRO
