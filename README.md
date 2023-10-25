@@ -70,7 +70,7 @@ Misc 有一些题目没有放出，大多是因为考点重复或者太简单，
 |:------------------------------------------------------:|:-------:|:------------------------------------------------:|
 | [中国特色社会主义！](challenges/crypto/CHain/README.md) |  Baby   |  [文件、源代码](challenges/crypto/CHain/attachments)   |
 |       [BASE！](challenges/crypto/BASE/README.md)        |  Baby   |   [文件、源代码](challenges/crypto/BASE/attachments)   |
-|                       [转转](<>)                       | Trivial |                   [文件、源代码](<>)                   |
+|       [转转](challenges/crypto/rot13/README.md)        | Trivial |  [文件、源代码](challenges/crypto/rot13/attachments)   |
 |     [好喜欢表情](challenges/crypto/EMO/README.md)      | Trivial |   [文件、源代码](challenges/crypto/EMO/attachments)    |
 |    [Vigenere](challenges/crypto/Vigenere/README.md)    |  Easy   | [文件、源代码](challenges/crypto/Vigenere/attachments) |
 |    [佛曰：你悟了没？](challenges/crypto/fo/README.md)    |  Easy   |    [文件、源代码](challenges/crypto/fo/attachments)    |
@@ -98,11 +98,11 @@ Misc 有一些题目没有放出，大多是因为考点重复或者太简单，
 
 ## 难度与分值
 
-| 题目难度         | Baby | Trivial | Easy | Normal | Medium |
-|:-------------|------|---------|------|--------|--------|
-| 题目分值         | 100  | 200     | 400  | 800    | 1200   |a
-| 题目最低分值比例 | 50%  | 80%     | 80%  | 80%    | 80%    |
-| 题目最低分值     | 50  | 160     | 320  | 640    | 960    |
-| 难度系数         | 3.0  | 4.0     | 5.0  | 6.0    | 7.0    |
+| 题目难度         | Baby | Trivial | Easy | Normal | Medium |   |
+|:-------------|------|---------|------|--------|--------|---|
+| 题目分值         | 100  | 200     | 400  | 800    | 1200   | a |
+| 题目最低分值比例 | 50%  | 80%     | 80%  | 80%    | 80%    |   |
+| 题目最低分值     | 50   | 160     | 320  | 640    | 960    |   |
+| 难度系数         | 3.0  | 4.0     | 5.0  | 6.0    | 7.0    |   |
 
 ## 来自参赛者的题解
