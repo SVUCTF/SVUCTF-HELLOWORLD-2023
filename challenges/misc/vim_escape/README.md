@@ -4,7 +4,8 @@
 - 参考：\[TokyoWesterns CTF 4th 2018 - vimshell\]([TokyoWesterns CTF 4th 2018](https://ctftime.org/event/651) )
 - 难度：Medium
 - 分类：PPC
-- 暴露端口：-
+- 镜像：-
+- 端口：-
 
 ## 题目描述
 
