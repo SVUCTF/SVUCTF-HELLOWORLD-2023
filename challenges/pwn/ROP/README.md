@@ -1,13 +1,9 @@
 # ROP链
 
 - 作者：pn1fg
-
 - 参考：
-
 - 难度：Easy
-
 - 分类：Pwn
-
 - 暴露端口：70
 
 # 题目描述
@@ -95,4 +91,3 @@ payload = rop.chain()
 io.sendlineafter(b'a?\n',payload)
 io.interactive()
 ```
-

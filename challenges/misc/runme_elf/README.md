@@ -14,7 +14,7 @@
 
 ## 题目解析
 
-题目制作仿照 [MoeCTF 2023] Basic/runme2 。
+题目制作仿照 \[MoeCTF 2023\] Basic/runme2 。
 
 - 附件：[runme](attachments/runme)
 
@@ -35,4 +35,3 @@ $ chmod +x runme
 $ ./runme
 flag{Run_m4_1n_l1nux!}
 ```
-

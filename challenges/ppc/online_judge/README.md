@@ -30,7 +30,6 @@
 
 > Hint：仔细阅读附件，flag 格式为 `flag{UUID}`，例如 `flag{7c89c43e-f3d2-406d-aa0e-87e97b027984}`，也就是 `^flag{[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}}$`
 
-
 ## 题目解析
 
 ### 前言
@@ -47,7 +46,7 @@
 
 > OJ（Online Judge，在线评测系统）是在课程教学、算法竞赛等场合中用于测试程序正确性的线上系统。用户可以通过友好的界面提交自己的源代码，评测系统在指定的环境中编译代码，使用特定的输入运行程序，并将输出与答案进行比对。
 
-比如大家耳熟能详的力扣（LeetCode）就是一个 OnlineJudge 系统，本校也有工作室搭建了 OJ 系统，可以去体验一下：[星火工作室 OJ]() 。
+比如大家耳熟能详的力扣（LeetCode）就是一个 OnlineJudge 系统，本校也有工作室搭建了 OJ 系统，可以去体验一下：[星火工作室 OJ](<>) 。
 
 ### 题目介绍
 
@@ -59,7 +58,7 @@
 
 ### 期望解法
 
-既然 OJ 系统的原理是编译我们提交的代码并运行，那必然可能带来一些安全问题，比如编写程序读取 `/flag` 文件内容。（使用指南中也在不断暗示有 `/flag` 这么个文件。） 
+既然 OJ 系统的原理是编译我们提交的代码并运行，那必然可能带来一些安全问题，比如编写程序读取 `/flag` 文件内容。（使用指南中也在不断暗示有 `/flag` 这么个文件。）
 
 可惜我们读取后并没有办法得到结果，因为系统只返回几个信息：编译错误、答案错误、答案成功，不会显示程序的输出。
 
@@ -230,8 +229,8 @@ for pos in range(42):
 
 0. 输出 Hello World!：[hello.c](writeup/hello.c)
 1. 回文数：[palindrome_number.c](writeup/palindrome_number.c)
-2. 转换成小写字母：[to_lower_case.c](writeup/to_lower_case.c)
-3. 倍数求和：[sum_multiples.c](writeup/sum_multiples.c)
+1. 转换成小写字母：[to_lower_case.c](writeup/to_lower_case.c)
+1. 倍数求和：[sum_multiples.c](writeup/sum_multiples.c)
 
 ## 碎碎念
 

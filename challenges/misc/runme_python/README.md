@@ -12,7 +12,7 @@ Python 是 CTF 中最常用的编程语言，不管是学习哪个方向都离�
 
 ## 题目解析
 
-题目制作仿照 [MoeCTF 2023] Basic/Python 。
+题目制作仿照 \[MoeCTF 2023\] Basic/Python 。
 
 附件代码：
 
@@ -42,4 +42,3 @@ enc2 = [((0xF3) & ord(i) | (ord(i) ^ 0xFF) & 0xC) for i in flag]
 enc1 = [i ^ 0xFF for i in enc2]
 print(enc1)
 ```
-

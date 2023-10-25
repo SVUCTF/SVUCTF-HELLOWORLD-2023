@@ -73,8 +73,6 @@
 </html>
 ```
 
-
-
 ```php
 <?php
 highlight_file(__FILE__);
@@ -93,8 +91,6 @@ if (isset($_GET['name']) && isset($_POST['password'])) {
 }
 ```
 
-
-
 flag文件
 
 ```php
@@ -104,7 +100,5 @@ echo $flag;
 
 ?>
 ```
-
-
 
 考点：md5的弱比较

@@ -1,13 +1,9 @@
 # hard_nc
 
 - 作者：pn1fg
-
 - 参考：-
-
 - 难度：Trivial
-
 - 分类：Pwn
-
 - 暴露端口：70
 
 # 题目描述
@@ -59,4 +55,3 @@ drwxr-xr-x    2 0        0             4096 Oct 14 10:22 lib64
 cat .secret/f*
 flag{6ff9a999-b773-4b55-97c2-62e5e28fa698}
 ```
-

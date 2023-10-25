@@ -1,13 +1,9 @@
 # GAME
 
 - 作者：pn1fg
-
 - 参考：-
-
 - 难度：Normal
-
 - 分类：Pwn
-
 - 暴露端口：70
 
 ## 题目描述
@@ -213,6 +209,7 @@ number = libc.rand() % 999 + 1
 io.sendlineafter(b'Input:\n',str(number).encode())
 io.interactive()
 ```
+
 **懒人解法：**
 
 [random.c](writeup/random.c)
@@ -232,7 +229,6 @@ int main() {
 ```
 
 [exp1.py](writeup/exp1.py)
-
 
 ```python
 from pwn import *
@@ -258,4 +254,3 @@ $ ./random && nc ip port
 ```
 
 这是在命令行同时执行运行和 nc 两个操作，这样的打概率可以确保它们的随机数种子是一致的
-

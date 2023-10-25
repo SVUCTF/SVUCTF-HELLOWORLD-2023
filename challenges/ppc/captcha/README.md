@@ -44,7 +44,6 @@ print(resp.json())
 
 `/html/body/p[@id='expression']/text()` 锁定了 id 为 `expression` 的标签内容，也就是页面显示的算式，接下来使用 `eval()` 计算表达式的值，最后 POST 传参过去。
 
-
 注意要使用 `session`，因为服务器程序通过 Session 来保存客户端的正确答案以及开始时间，你需要保证两次请求是同一会话。
 
 服务端代码在这：[main.py](build/app/main.py)

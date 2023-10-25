@@ -4,7 +4,7 @@
 - 参考：-
 - 难度：Medium
 - 分类：PPC
-- 暴露端口：-
+- 暴露端口：70
 
 ## 题目描述
 
@@ -26,5 +26,40 @@
 
 @zzz：「？」
 
+> Hint：附件中引入的 freshman 文件与此题无关。（本题制作过程中没有任何一位新生受到伤害）
+
 ## 题目解析
 
+这题是偏向 Crypto 的 PPC。
+
+考点：梅森算法的破解，预测随机数。
+
+题目附件 [main.py](attachments/main.py)：
+
+```python
+#!/usr/local/bin/python
+
+import os
+import random
+import freshman
+
+
+FLAG = os.getenv("GZCTF_FLAG", "fake{xxxxxxxx}")
+
+seed = freshman.exit_vim() 
+random.seed(seed)
+
+while True:
+    number = random.getrandbits(32)
+    print("都说了我的种子万无一失，你没办法预测我的随机数")
+    ctfer_input = input(f">> ")
+
+    if int(ctfer_input) == number:
+        print(FLAG)
+        break
+    else:
+        print(f"猜错了喔，我输入的可是：")
+        print(number)
+```
+
+### 关于梅森算法

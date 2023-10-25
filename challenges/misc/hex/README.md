@@ -3,7 +3,7 @@
 - 作者：Wh1te_0range
 - 参考：-
 - 难度：Easy
-- 分类：Misc  
+- 分类：Misc
 
 ## 题目描述
 
