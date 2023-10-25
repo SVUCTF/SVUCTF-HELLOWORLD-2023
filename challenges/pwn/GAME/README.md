@@ -19,9 +19,9 @@
 - 源码：[game.c](build/game.c)
 - 考点：随机数预测，pwntools的使用
 
-#### 查看问件信息
+#### 查看文件信息
 
-查看文件类型（`file`命令）：
+查看文件类型（`file` 命令）：
 
 ```shell
 >>> file GAME
@@ -32,7 +32,7 @@ GAME: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, i
 
 查看保护机制（`checksec`命令）：
 
-```shell
+```console
 >>> checksec --file=GAME
 [*] '/home/pn1fg/文档/0xgame/GAME'
     Arch:     amd64-64-little
@@ -126,7 +126,7 @@ void sym.game(void)
 
 它的汇编如下：
 
-```c
+```nasm
 [0x00401110]> pdf @ sym.game
             ; CALL XREF from main @ 0x401350(x)
 ┌ 169: sym.game ();
@@ -192,7 +192,7 @@ void sym.game(void)
 
 **常规解法：**（这里给两种写法，第一种比较正规，第二种会有失败的概率）
 
-- [exp.py](writeup/exp.py)
+[exp.py](writeup/exp.py)
 
 ```python
 from pwn import *
@@ -213,24 +213,26 @@ number = libc.rand() % 999 + 1
 io.sendlineafter(b'Input:\n',str(number).encode())
 io.interactive()
 ```
+**懒人解法：**
 
-- [exp1.py](writeup/exp1.py)
+[random.c](writeup/random.c)
 
-  - [random.c](writeup/random.c)
+```c
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
-    ```c
-    #include <stdio.h>
-    #include <time.h>
-    #include <stdlib.h>
-    
-    int main() {
-      int a;
-      srand(time(0));
-      a = rand() % 999 + 1;
-      printf("%d",a);
-      return 0;
-    }
-    ```
+int main() {
+    int a;
+    srand(time(0));
+    a = rand() % 999 + 1;
+    printf("%d",a);
+    return 0;
+}
+```
+
+[exp1.py](writeup/exp1.py)
+
 
 ```python
 from pwn import *
@@ -249,7 +251,7 @@ io.interactive()
 
 这里是利用 python 和操作系统交互的方式，在运行 exp 的同时调用操作系统执行 C 程序，这样的缺点就是可能有时间误差，导致有些时候会打不通
 
-**懒人解法：**
+更懒的你可以直接在命令行中：
 
 ```shell
 >>> ./random && nc ip port
