@@ -67,7 +67,7 @@ Misc 有一些题目没有放出，大多是因为考点重复或者太简单，
 
 | 题目描述与题解                                        | 难度    | 文件、源代码                                     | 镜像                                                                                            | 出题人   |
 |:------------------------------------------------------|:--------|:-------------------------------------------|:------------------------------------------------------------------------------------------------|:---------|
-| [你会nc嘛？](challenges/pwn/nc/README.md)              | Baby    | [文件、源代码](challenges/pwn/nc/build)          | [svuctf-helloworld-2023/nc](https://ghcr.io/svuctf/svuctf-helloworld-2023/nc)                   | 13m0n4de |
+| [你会nc嘛？](challenges/pwn/nc/README.md)              | Baby    | [文件、源代码](challenges/pwn/nc/build)          | [svuctf-helloworld-2023/nc](https://ghcr.io/svuctf/svuctf-helloworld-2023/nc)                   | pn1fg |
 | [hard_nc](challenges/pwn/hard_nc/README.md)           | Trivial | [文件、源代码](challenges/pwn/hard_nc/build)     | [svuctf-helloworld-2023/hard_nc](https://ghcr.io/svuctf/svuctf-helloworld-2023/hard_nc)         | pn1fg    |
 | [没有权限的flag！](challenges/pwn/SUID/README.md)      | Easy    | [文件、源代码](challenges/pwn/SUID/build)        | [svuctf-helloworld-2023/suid](https://ghcr.io/svuctf/svuctf-helloworld-2023/suid)               | pn1fg    |
 | [ret2text_32](challenges/pwn/ret2text_32/README.md)   | Normal  | [文件、源代码](challenges/pwn/ret2text_32/build) | [svuctf-helloworld-2023/ret2text_32](https://ghcr.io/svuctf/svuctf-helloworld-2023/ret2text_32) | pn1fg    |
