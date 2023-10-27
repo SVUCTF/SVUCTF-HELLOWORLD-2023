@@ -17,9 +17,8 @@
 
 题目制作仿照 \[MoeCTF 2023\] Basic/runme 。
 
-附件：[runme.exe](attachments/runme.exe)
-
-源码：[runme.c](build/runme.c)
+- 附件：[runme.exe](attachments/runme.exe)
+- 源码：[runme.c](build/runme.c)
 
 双击执行 `runme.exe` ，出现一个一闪而过的黑框框，不要害怕自己运行了什么奇怪的病毒。
 

@@ -18,7 +18,6 @@
 题目制作仿照 \[MoeCTF 2023\] Basic/runme2 。
 
 - 附件：[runme](attachments/runme)
-
 - 源码：[runme.c](build/runme.c)
 
 配置好 Linux 环境（无论你是虚拟机还是 WSL 还是直接装在物理机上），将附件传入。
@@ -36,3 +35,13 @@ $ chmod +x runme
 $ ./runme
 flag{Run_m4_1n_l1nux!}
 ```
+
+---
+
+赛后发现好多选手是用 `strings` 直接查看字符串的。
+
+还有用 010Editor 的。
+
+甚至还有反编译的。
+
+“在小小的 CTF 赛中，每个人都有自己要做的事情。”
