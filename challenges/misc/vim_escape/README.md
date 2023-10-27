@@ -35,4 +35,10 @@
 
 ## 题目解析
 
-用 vimrc 复刻的 [TokyoWesterns CTF 4th 2018](https://ctftime.org/event/651) 中 vimshell 这题。
+用 vimrc 复刻的 [TokyoWesterns CTF 4th 2018](https://ctftime.org/event/651) 中 vimshell 这题。由于这个比赛没有开放源代码，我也不清楚它使用了什么方式限制用户输入，我这里用的是 `.vimrc` 配置文件，而 Web 终端使用的是 [ttyd](https://github.com/tsl0922/ttyd)。
+
+这题的核心思路大概有两个：
+
+- 唤出命令面板
+- 跳转查看文件
+
