@@ -4,7 +4,7 @@
 - 参考：-
 - 难度：Medium
 - 分类：PPC
-- 镜像：-
+- 镜像：[svuctf-helloworld-2023/online_judge](https://ghcr.io/svuctf/svuctf-helloworld-2023/online_judge)
 - 端口：12345
 
 ## 题目描述

@@ -4,7 +4,7 @@
 - 参考：[LitCTF2023/Missile trail](https://github.com/ProbiusOfficial/LitCTF/tree/main/2023/Web/Missile%20trail)
 - 难度：Easy
 - 分类：Web
-- 镜像：-
+- 镜像：[svuctf-helloworld-2023/missile_trail](https://ghcr.io/svuctf/svuctf-helloworld-2023/missile_trail)
 - 端口：80
 
 ## 题目描述

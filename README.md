@@ -65,25 +65,25 @@ Misc 有一些题目没有放出，大多是因为考点重复或者太简单，
 
 ### Pwn
 
-| 题目描述与题解                                        | 难度    | 文件、源代码                                     | 镜像 | 出题人   |
-|:------------------------------------------------------|:--------|:-------------------------------------------|:-----|:---------|
-| [你会nc嘛？](challenges/pwn/nc/README.md)              | Baby    | [文件、源代码](challenges/pwn/nc/build)          | -    | 13m0n4de |
-| [hard_nc](challenges/pwn/hard_nc/README.md)           | Trivial | [文件、源代码](challenges/pwn/hard_nc/build)     | -    | pn1fg    |
-| [没有权限的flag！](challenges/pwn/SUID/README.md)      | Easy    | [文件、源代码](challenges/pwn/SUID/build)        | -    | pn1fg    |
-| [ret2text_32](challenges/pwn/ret2text_32/README.md)   | Normal  | [文件、源代码](challenges/pwn/ret2text_32/build) | -    | pn1fg    |
-| [GAME](challenges/pwn/GAME/README.md)                 | Normal  | [文件、源代码](challenges/pwn/GAME/build)        | -    | pn1fg    |
-| [简单的shellcode](challenges/pwn/shellcode/README.md) | Normal  | [文件、源代码](challenges/pwn/shellcode/build)   | -    | pn1fg    |
-| [ret2text_64](challenges/pwn/ret2text_64/README.md)   | Medium  | [文件、源代码](challenges/pwn/ret2text_64/build) | -    | pn1fg    |
-| [ROP链](challenges/pwn/ROP/README.md)                 | Medium  | [文件、源代码](challenges/pwn/ROP/build)         | -    | pn1fg    |
+| 题目描述与题解                                        | 难度    | 文件、源代码                                     | 镜像                                                                                            | 出题人   |
+|:------------------------------------------------------|:--------|:-------------------------------------------|:------------------------------------------------------------------------------------------------|:---------|
+| [你会nc嘛？](challenges/pwn/nc/README.md)              | Baby    | [文件、源代码](challenges/pwn/nc/build)          | [svuctf-helloworld-2023/nc](https://ghcr.io/svuctf/svuctf-helloworld-2023/nc)                   | 13m0n4de |
+| [hard_nc](challenges/pwn/hard_nc/README.md)           | Trivial | [文件、源代码](challenges/pwn/hard_nc/build)     | [svuctf-helloworld-2023/hard_nc](https://ghcr.io/svuctf/svuctf-helloworld-2023/hard_nc)         | pn1fg    |
+| [没有权限的flag！](challenges/pwn/SUID/README.md)      | Easy    | [文件、源代码](challenges/pwn/SUID/build)        | [svuctf-helloworld-2023/suid](https://ghcr.io/svuctf/svuctf-helloworld-2023/suid)               | pn1fg    |
+| [ret2text_32](challenges/pwn/ret2text_32/README.md)   | Normal  | [文件、源代码](challenges/pwn/ret2text_32/build) | [svuctf-helloworld-2023/ret2text_32](https://ghcr.io/svuctf/svuctf-helloworld-2023/ret2text_32) | pn1fg    |
+| [GAME](challenges/pwn/GAME/README.md)                 | Normal  | [文件、源代码](challenges/pwn/GAME/build)        | [svuctf-helloworld-2023/game](https://ghcr.io/svuctf/svuctf-helloworld-2023/game)               | 13m0n4de |
+| [简单的shellcode](challenges/pwn/shellcode/README.md) | Normal  | [文件、源代码](challenges/pwn/shellcode/build)   | [svuctf-helloworld-2023/shellcode](https://ghcr.io/svuctf/svuctf-helloworld-2023/shellcode)     | pn1fg    |
+| [ret2text_64](challenges/pwn/ret2text_64/README.md)   | Medium  | [文件、源代码](challenges/pwn/ret2text_64/build) | [svuctf-helloworld-2023/ret2text_64](https://ghcr.io/svuctf/svuctf-helloworld-2023/ret2text_64) | pn1fg    |
+| [ROP链](challenges/pwn/ROP/README.md)                 | Medium  | [文件、源代码](challenges/pwn/ROP/build)         | [svuctf-helloworld-2023/rop](https://ghcr.io/svuctf/svuctf-helloworld-2023/rop)                 | pn1fg    |
 
 ### PPC
 
-| 题目描述与题解                                                        | 难度   | 文件、源代码                                      | 镜像 | 出题人   |
-|:-------------------------------------------------------------------|:-------|:--------------------------------------------|:-----|:---------|
-| [高 Ping 战士](challenges/ppc/pwntools/README.md)                     | Easy   | [文件、源代码](challenges/ppc/pwntools/build)     | -    | 13m0n4de |
-| [我们怀疑您是人类，请完成机器人验证](challenges/ppc/captcha/README.md) | Easy   | [文件、源代码](challenges/ppc/captcha/build)      | -    | 13m0n4de |
-| [绝对安全的随机数生成器](challenges/ppc/prng/README.md)               | Medium | [文件、源代码](challenges/ppc/prng/build)         | -    | 13m0n4de |
-| [更适合破晓宝宝的 OJ](challenges/ppc/online_judge/README.md)          | Medium | [文件、源代码](challenges/ppc/online_judge/build) | -    | 13m0n4de |
+| 题目描述与题解                                                        | 难度   | 文件、源代码                                      | 镜像                                                                                              | 出题人   |
+|:-------------------------------------------------------------------|:-------|:--------------------------------------------|:--------------------------------------------------------------------------------------------------|:---------|
+| [高 Ping 战士](challenges/ppc/pwntools/README.md)                     | Easy   | [文件、源代码](challenges/ppc/pwntools/build)     | [svuctf-helloworld-2023/pwntools](https://ghcr.io/svuctf/svuctf-helloworld-2023/pwntools)         | 13m0n4de |
+| [我们怀疑您是人类，请完成机器人验证](challenges/ppc/captcha/README.md) | Easy   | [文件、源代码](challenges/ppc/captcha/build)      | [svuctf-helloworld-2023/captcha](https://ghcr.io/svuctf/svuctf-helloworld-2023/captcha)           | 13m0n4de |
+| [绝对安全的随机数生成器](challenges/ppc/prng/README.md)               | Medium | [文件、源代码](challenges/ppc/prng/build)         | [svuctf-helloworld-2023/prng](https://ghcr.io/svuctf/svuctf-helloworld-2023/prng)                 | 13m0n4de |
+| [更适合破晓宝宝的 OJ](challenges/ppc/online_judge/README.md)          | Medium | [文件、源代码](challenges/ppc/online_judge/build) | [svuctf-helloworld-2023/online_judge](https://ghcr.io/svuctf/svuctf-helloworld-2023/online_judge) | 13m0n4de |
 
 ### Crypto
 
@@ -107,15 +107,15 @@ Misc 有一些题目没有放出，大多是因为考点重复或者太简单，
 
 ### Web
 
-|                           题目描述与题解                           |  难度   |                       文件、源代码                        |
-|:------------------------------------------------------------------|:-------|:---------------------------------------------------|
-|     [今日没课，睡个觉吧](challenges/web/view_source/README.md)      |  Baby   |     [文件、源代码](challenges/web/view_source/build)      |
-|                [GET](challenges/web/get/README.md)                 | Trivial |         [文件、源代码](challenges/web/get/build)          |
-|           [艺术就是爆炸](challenges/web/crack/README.md)           | Trivial |        [文件、源代码](challenges/web/crack/build)         |
-|     [中场休息玩个游戏](challenges/web/missile_trail/README.md)     |  Easy   |    [文件、源代码](challenges/web/missile_trail/build)     |
-|    [原神，启动！](challenges/web/non_pressable_button/README.md)     |  Easy   | [文件、源代码](challenges/web/non_pressable_button/build) |
-|               [米哈游](challenges/web/md5/README.md)               |  Easy   |         [文件、源代码](challenges/web/md5/build)          |
-| [更适合破晓宝宝的代码编辑器](challenges/web/code_editor/README.md) |  Easy   |     [文件、源代码](challenges/web/code_editor/build)      |
+| 题目描述与题解                                                     | 难度    | 文件、源代码                                              | 镜像                                                                                                              | 出题人   |
+|:-------------------------------------------------------------------|:--------|:----------------------------------------------------|:------------------------------------------------------------------------------------------------------------------|:---------|
+| [今日没课，睡个觉吧](challenges/web/view_source/README.md)          | Baby    | [文件、源代码](challenges/web/view_source/build)          | [svuctf-helloworld-2023/view_source](https://ghcr.io/svuctf/svuctf-helloworld-2023/view_source)                   | Only     |
+| [艺术就是爆炸](challenges/web/crack/README.md)                     | Trivial | [文件、源代码](challenges/web/crack/build)                | [svuctf-helloworld-2023/crack](https://ghcr.io/svuctf/svuctf-helloworld-2023/crack)                               | ksks     |
+| [GET](challenges/web/get/README.md)                                | Trivial | [文件、源代码](challenges/web/get/build)                  | [svuctf-helloworld-2023/get](https://ghcr.io/svuctf/svuctf-helloworld-2023/get)                                   | ksks     |
+| [中场休息玩个游戏](challenges/web/missile_trail/README.md)         | Easy    | [文件、源代码](challenges/web/missile_trail/build)        | [svuctf-helloworld-2023/missile_trail](https://ghcr.io/svuctf/svuctf-helloworld-2023/missile_trail)               | Only     |
+| [原神，启动！](challenges/web/non_pressable_button/README.md)        | Easy    | [文件、源代码](challenges/web/non_pressable_button/build) | [svuctf-helloworld-2023/non_pressable_button](https://ghcr.io/svuctf/svuctf-helloworld-2023/non_pressable_button) | ksks     |
+| [米哈游](challenges/web/md5/README.md)                             | Easy    | [文件、源代码](challenges/web/md5/build)                  | [svuctf-helloworld-2023/md5](https://ghcr.io/svuctf/svuctf-helloworld-2023/md5)                                   | ksks     |
+| [更适合破晓宝宝的代码编辑器](challenges/web/code_editor/README.md) | Easy    | [文件、源代码](challenges/web/code_editor/build)          | [svuctf-helloworld-2023/code_editor](https://ghcr.io/svuctf/svuctf-helloworld-2023/code_editor)                   | 13m0n4de |
 
 ## 难度与分值
 

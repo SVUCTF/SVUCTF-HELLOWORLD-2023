@@ -4,7 +4,7 @@
 - 参考：
 - 难度：Medium
 - 分类：Pwn
-- 镜像：-
+- 镜像：[svuctf-helloworld-2023/rop](https://ghcr.io/svuctf/svuctf-helloworld-2023/rop)
 - 端口：70
 
 # 题目描述

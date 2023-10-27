@@ -1,10 +1,10 @@
 # ret2text_32
 
-- 作者：pn1fg
+- 作者：13m0n4de
 - 参考：[ctfwiki/ctf-challenges](https://github.com/ctf-wiki/ctf-challenges/tree/master/pwn/stackoverflow/ret2text/bamboofox-ret2text)
 - 难度：Normal
 - 分类：Pwn
-- 镜像：-
+- 镜像：[svuctf-helloworld-2023/ret2text_32](https://ghcr.io/svuctf/svuctf-helloworld-2023/ret2text_32)
 - 端口：70
 
 ## 题目描述

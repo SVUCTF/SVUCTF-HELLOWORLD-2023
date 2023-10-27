@@ -4,7 +4,7 @@
 - 参考：-
 - 难度：Easy
 - 分类：PPC
-- 镜像：-
+- 镜像：[svuctf-helloworld-2023/pwntools](https://ghcr.io/svuctf/svuctf-helloworld-2023/pwntools)
 - 端口：70
 
 ## 题目描述

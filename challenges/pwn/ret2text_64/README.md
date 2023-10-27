@@ -4,7 +4,7 @@
 - 参考：W4terCTF 2023
 - 难度：Medium
 - 分类：Pwn
-- 镜像：-
+- 镜像：[svuctf-helloworld-2023/ret2text64](https://ghcr.io/svuctf/svuctf-helloworld-2023/ret2text64)
 - 端口：70
 
 ## 题目描述

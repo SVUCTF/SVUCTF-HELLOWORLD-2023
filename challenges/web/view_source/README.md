@@ -4,7 +4,7 @@
 - 参考：-
 - 难度：Baby
 - 分类：Web
-- 镜像：-
+- 镜像：[svuctf-helloworld-2023/view_source](https://ghcr.io/svuctf/svuctf-helloworld-2023/view_source)
 - 端口：80
 
 ## 题目描述
