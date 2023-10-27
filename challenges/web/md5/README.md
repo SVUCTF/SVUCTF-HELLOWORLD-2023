@@ -13,66 +13,9 @@
 
 ## 题目解析
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
-<header>
-    <h1></h1>
-</header>
-<main>
-    <article>
-        <h2>这是一个收藏miHOYO表情包的站点</h2>
-        <p></p>
-        <p></p>
-        <img src="x.png" alt="图片描述">
-        <img src="x1.png" alt="图片描述">
-        <img src="x2.png" alt="图片描述">
-        <img src="x3.png" alt="图片描述">
-        <img src="x4.png" alt="图片描述">
-        <img src="x5.png" alt="图片描述">
-        <img src="x6.png" alt="图片描述">
-    </article>
+考点：MD5 的弱类型比较
 
-</main>
-
-<div class="bottom-button">
-    <a href="md5.php" class="button">点我进一步查看更多表情包</a>
-</div>
-
-</body>
-</html>
-```
+源码：
 
 ```php
 <?php
@@ -92,14 +35,62 @@ if (isset($_GET['name']) && isset($_POST['password'])) {
 }
 ```
 
-flag文件
+需要 GET 传递一个 `name` 参数，POST 传递一个 `password` 参数，它们必须不相等，但它们的 MD5 值必须相等。
+
+看似逻辑上说不过去，这题的关键点在于等号 `==`。
+
+### 弱类型
+
+PHP 是一门弱类型的语言，它不会严格校验变量类型，变量可以不显示地生命其类型，而是在运行期间直接复制。
+
+同是弱类型语言的还有 JavaScript 等，与其相对的是强类型的语言，比如 Python 。
+
+这里的“弱”指的是使用变量时不需要我们定义类型，变量在处理的过程中也没那么在意类型，而是根据内容自动判断，从而可能导致漏洞发生。
+
+在 PHP 中，有两种等号，`==` 和 `===`，前者会在比较前将不同类型的值转换为相同类型再进行比较，后者这直接比较类型是否相同，相同的情况下再比较值。
+
+这题源码中使用了 `==` ，他会出现以下情况：
 
 ```php
 <?php
-$flag = 'flag{xxxxxxxxxxxx}';
-echo $flag;
-
-?>
+var_dump("a"==0);  //true
+var_dump("1a"==1); //true
+var_dump("a1"==1); //false
+var_dump("a1"==0); //true
+var_dump("0e123456"=="0e234567"); //true
+var_dump(0=="1a"); //false
 ```
 
-考点：md5的弱比较
+`"a" == 0`，是因为在 PHP 中一个字符串被当作数值来取值时，如果它没有包含 `.`、`e`、`E`，其开始部分决定了转换后的值。
+
+- 如果以合法数值开始，比如 `"1a"` 则使用 `1`。
+- 否则如 `"a"` 和 `"a1"` 都会设置为 `0`。
+
+ 而 `"0e123456" == "0e234567"` 时，会将 `0e` 这类字符串识别为科学计数法的数值，0 无论多少次方都是 0，所以相等。
+
+### 绕过 MD5 弱类型比较
+
+刚刚介绍了 `"0e123456" == "0e234567"` 之类的字符串弱比较时会相等，那如果有两个不同字符串，它们 MD5 计算后会得到 `0e` 开头的 MD5 值，这不就绕过了判断吗。
+
+这里有一些满足条件的字符串，网上能搜到很多：
+
+```
+QNKCDZO
+0e830400451993494058024219903391
+240610708
+0e462097431906509019562988736854
+s878926199a
+0e545993274517709034328855841020
+s155964671a
+0e342768416822451524974117254469
+s214587387a
+0e848240448830537924465865611904
+```
+
+它们大多都是爆破得来。
+
+---
+
+因为 MD5 的算法特性以及输出长度较短，早已不太安全，会发生哈希冲突，即两个不同的输入数据生成相同的哈希值。
+
+所以这题也不一定需要利用 PHP 的弱比较特性，感兴趣的同学可以搜索：`哈希碰撞`。
