@@ -24,10 +24,10 @@
 
 **壳的分类：**
 
--  压缩壳
-  - UPX
-  - ASpack
-  - PECompat
+- 压缩壳
+- UPX
+- ASpack
+- PECompat
 - 加密壳
   - APSrotector
   - Armadillo
@@ -73,6 +73,6 @@ void sym.gift(void)
 
 这一串加密的字符串似乎就是 flag。
 
-`Cyberchef`解密（`base32）：
+`Cyberchef`解密（\`base32）：
 
 flag{C0ngratu1ati0ns_hacker}

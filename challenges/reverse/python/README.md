@@ -12,6 +12,7 @@
 你知道py反编译嘛？
 
 ## 题目解析
+
 查看文件类型：
 
 ```shell
@@ -64,5 +65,3 @@ for i in message:
 
 print(flag)
 ```
-
- 

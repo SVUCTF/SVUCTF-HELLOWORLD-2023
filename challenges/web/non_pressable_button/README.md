@@ -23,7 +23,6 @@
 
 ![](writeup/images/disabled.png)
 
-
 HTML 中的 `disabled` 属性用来指示该元素是否应该禁用或不可用，你可以把 disabled 属性设置为 "false" 或删除它，这样按钮就会重新生效。
 
 右键开发者工具中的 HTML 元素，选中修改 HTML，把 `disabled=""` 删除后点击编辑框外的区域即可保存。（不要刷新页面！）

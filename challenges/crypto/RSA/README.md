@@ -53,4 +53,3 @@ print(flag.decode())
 ```
 
 `flag{IlikeCTFbutCTFdon'tlikeme}`
-

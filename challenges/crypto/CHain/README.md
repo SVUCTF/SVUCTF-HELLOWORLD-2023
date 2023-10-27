@@ -20,4 +20,3 @@
 这里是使用了一种名叫 中国特色社会主义核心价值观的编码 进行解码
 
 `flag{zhe_ye_shi-yi-zhong_bian-ma?}`
-

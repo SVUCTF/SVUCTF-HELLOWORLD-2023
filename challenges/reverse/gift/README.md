@@ -43,4 +43,3 @@ void sym.gift(void)
 得到字符串，字符串套了一层 base64
 
 flag：`flag{Welc0me_t0_SVUCTF!}`
-
