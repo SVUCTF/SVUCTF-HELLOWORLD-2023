@@ -55,7 +55,7 @@
 - [PROBLEMS.md](attachments/PROBLEMS.md)：题目单
 - [API.md](attachments/API.md)：API 文档（只草草的列了一下）
 
-其实这题的附件挺抱歉的，因为比赛提前了一周，这个题目没能来得及首尾，本来可能会有更详尽的使用文档，至少 API 文档得详细。
+其实这题的附件挺抱歉的，因为比赛提前了一周，这个题目没能来得及收尾，本来会有更详尽的使用文档，至少 API 文档得详细。
 
 可是比赛迅速上线了，没办法。
 
@@ -276,5 +276,4 @@ for pos in range(42):
 总之这里有一些反弹 Shell 的资料，感兴趣的同学可以试一下。
 
 - [PayloadsAllTheThings - Reverse Shell Cheatsheet](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
-
 - [HackTricks - Shells](https://book.hacktricks.xyz/generic-methodologies-and-resources/shells/linux)
