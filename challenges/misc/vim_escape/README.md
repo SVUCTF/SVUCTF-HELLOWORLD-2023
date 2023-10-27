@@ -72,7 +72,7 @@ Vim 中有以下几种命令模式：
 - 插入可视模式（Insert Visual Mode）：\
     这个模式结合了插入模式和可视模式，允许你在可视选择的文本上插入文本。你可以按下 "Ctrl-i" 进入插入可视模式。
 
-Vim 在这写模式间切换，倚靠的是大量快捷键，推荐查阅 Vim 手册：
+Vim 在这些模式间切换，倚靠的是大量快捷键，推荐查阅 Vim 手册：
 
 - [Vim 中文手册](https://yianwillis.github.io/vimcdoc/doc/usr_toc.html)
 - [Vim 中文帮助](https://yianwillis.github.io/vimcdoc/doc/help.html)
