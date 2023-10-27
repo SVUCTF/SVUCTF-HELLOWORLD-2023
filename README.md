@@ -25,22 +25,22 @@ challenges/                             # 题目目录
 
 ### Misc
 
-| 题目描述与题解                                              | 难度    | 文件、源代码                                             | 镜像 | 出题人       |
-|:------------------------------------------------------------|:--------|:---------------------------------------------------|:-----|:-------------|
-| [runme_c](challenges/misc/runme_c/README.md)                | Baby    | [文件、源代码](challenges/misc/runme_c/attachments)      | -    | 13m0n4de     |
-| [runeme_python](challenges/misc/runme_python/README.md)     | Baby    | [文件、源代码](challenges/misc/runme_python/attachments) | -    | 13m0n4de     |
-| [runeme_elf](challenges/misc/runme_elf/README.md)           | Baby    | [文件、源代码](challenges/misc/runme_elf/build)          | -    | 13m0n4de     |
-| [runeme_exe](challenges/misc/runme_exe/README.md)           | Baby    | [文件、源代码](challenges/misc/runme_exe/build)          | -    | 13m0n4de     |
-| [碰撞！碰撞！碰撞！](challenges/misc/peng/README.md)           | Baby    | [文件、源代码](challenges/misc/peng/attachments)         | -    | Wh1te_0range |
-| [很可爱的一只猫](challenges/misc/cat/README.md)             | Baby    | [文件、源代码](challenges/misc/cat/attachments)          | -    | Wh1te_0range |
-| [各自离开后的终章](challenges/misc/love/README.md)          | Baby    | [文件、源代码](challenges/misc/love/attachments)         | -    | Wh1te_0range |
-| [夜晚的星](challenges/misc/evening/README.md)               | Trivial | [文件、源代码](challenges/misc/evening/attachments)      | -    | Wh1te_0range |
-| [Easy社工](challenges/misc/easy_osint/README.md)            | Trivial | [文件、源代码](challenges/misc/easy_osint/attachments)   | -    | Wh1te_0range |
-| [原神！重启！](challenges/misc/yuanshen/README.md)            | Trivial | [文件、源代码](challenges/misc/yuanshen/attachments)     | -    | Wh1te_0range |
-| [SharkShark!芜湖！](challenges/misc/shark/README.md)         | Easy    | [文件、源代码](challenges/misc/shark/attachments)        | -    | Wh1te_0range |
-| [可曾听闻俄罗斯套娃？](challenges/misc/tw/README.md)         | Easy    | [文件、源代码](challenges/misc/tw/attachments)           | -    | Wh1te_0range |
-| [Baby社工](challenges/misc/baby_osint/README.md)            | Normal  | [文件、源代码](challenges/misc/baby_osint/attachments)   | -    | Wh1te_0range |
-| [救命我被 Vim 困住了](challenges/misc/vim_escape/README.md) | Medium  | [文件、源代码](challenges/misc/vim_escape/build)         | -    | 13m0n4de     |
+| 题目描述与题解                                              | 难度    | 文件、源代码                                             | 镜像                                                                                          | 出题人       |
+|:------------------------------------------------------------|:--------|:---------------------------------------------------|:----------------------------------------------------------------------------------------------|:-------------|
+| [runme_c](challenges/misc/runme_c/README.md)                | Baby    | [文件、源代码](challenges/misc/runme_c/attachments)      | -                                                                                             | 13m0n4de     |
+| [runeme_python](challenges/misc/runme_python/README.md)     | Baby    | [文件、源代码](challenges/misc/runme_python/attachments) | -                                                                                             | 13m0n4de     |
+| [runeme_elf](challenges/misc/runme_elf/README.md)           | Baby    | [文件、源代码](challenges/misc/runme_elf/build)          | -                                                                                             | 13m0n4de     |
+| [runeme_exe](challenges/misc/runme_exe/README.md)           | Baby    | [文件、源代码](challenges/misc/runme_exe/build)          | -                                                                                             | 13m0n4de     |
+| [碰撞！碰撞！碰撞！](challenges/misc/peng/README.md)           | Baby    | [文件、源代码](challenges/misc/peng/attachments)         | -                                                                                             | Wh1te_0range |
+| [很可爱的一只猫](challenges/misc/cat/README.md)             | Baby    | [文件、源代码](challenges/misc/cat/attachments)          | -                                                                                             | Wh1te_0range |
+| [各自离开后的终章](challenges/misc/love/README.md)          | Baby    | [文件、源代码](challenges/misc/love/attachments)         | -                                                                                             | Wh1te_0range |
+| [夜晚的星](challenges/misc/evening/README.md)               | Trivial | [文件、源代码](challenges/misc/evening/attachments)      | -                                                                                             | Wh1te_0range |
+| [Easy社工](challenges/misc/easy_osint/README.md)            | Trivial | [文件、源代码](challenges/misc/easy_osint/attachments)   | -                                                                                             | Wh1te_0range |
+| [原神！重启！](challenges/misc/yuanshen/README.md)            | Trivial | [文件、源代码](challenges/misc/yuanshen/attachments)     | -                                                                                             | Wh1te_0range |
+| [SharkShark!芜湖！](challenges/misc/shark/README.md)         | Easy    | [文件、源代码](challenges/misc/shark/attachments)        | -                                                                                             | Wh1te_0range |
+| [可曾听闻俄罗斯套娃？](challenges/misc/tw/README.md)         | Easy    | [文件、源代码](challenges/misc/tw/attachments)           | -                                                                                             | Wh1te_0range |
+| [Baby社工](challenges/misc/baby_osint/README.md)            | Normal  | [文件、源代码](challenges/misc/baby_osint/attachments)   | -                                                                                             | Wh1te_0range |
+| [救命我被 Vim 困住了](challenges/misc/vim_escape/README.md) | Medium  | [文件、源代码](challenges/misc/vim_escape/build)         | [svuctf-helloworld-2023/vim_escape](https://ghcr.io/svuctf/svuctf-helloworld-2023/vim_escape) | 13m0n4de     |
 
 Misc 有一些题目没有放出，大多是因为考点重复或者太简单，但还是放在仓库里了，它们没有题解。
 
@@ -67,7 +67,7 @@ Misc 有一些题目没有放出，大多是因为考点重复或者太简单，
 
 | 题目描述与题解                                        | 难度    | 文件、源代码                                     | 镜像                                                                                            | 出题人   |
 |:------------------------------------------------------|:--------|:-------------------------------------------|:------------------------------------------------------------------------------------------------|:---------|
-| [你会nc嘛？](challenges/pwn/nc/README.md)              | Baby    | [文件、源代码](challenges/pwn/nc/build)          | [svuctf-helloworld-2023/nc](https://ghcr.io/svuctf/svuctf-helloworld-2023/nc)                   | pn1fg |
+| [你会nc嘛？](challenges/pwn/nc/README.md)              | Baby    | [文件、源代码](challenges/pwn/nc/build)          | [svuctf-helloworld-2023/nc](https://ghcr.io/svuctf/svuctf-helloworld-2023/nc)                   | pn1fg    |
 | [hard_nc](challenges/pwn/hard_nc/README.md)           | Trivial | [文件、源代码](challenges/pwn/hard_nc/build)     | [svuctf-helloworld-2023/hard_nc](https://ghcr.io/svuctf/svuctf-helloworld-2023/hard_nc)         | pn1fg    |
 | [没有权限的flag！](challenges/pwn/SUID/README.md)      | Easy    | [文件、源代码](challenges/pwn/SUID/build)        | [svuctf-helloworld-2023/suid](https://ghcr.io/svuctf/svuctf-helloworld-2023/suid)               | pn1fg    |
 | [ret2text_32](challenges/pwn/ret2text_32/README.md)   | Normal  | [文件、源代码](challenges/pwn/ret2text_32/build) | [svuctf-helloworld-2023/ret2text_32](https://ghcr.io/svuctf/svuctf-helloworld-2023/ret2text_32) | pn1fg    |
