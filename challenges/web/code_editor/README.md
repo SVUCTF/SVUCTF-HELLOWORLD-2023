@@ -33,7 +33,7 @@
 
 ![save_code](writeup/images/save_code.png)
 
-访问 `https://IP:PORT/saved/code_xxxxx.c` 访问到此文件。
+`https://IP:PORT/saved/code_xxxxx.c` 可以访问到此文件。
 
 通过开发者工具中网络记录可以看到，上传请求是 JSON 格式，其中文件名 `filename` 和文件内容 `code` 都可控。
 
