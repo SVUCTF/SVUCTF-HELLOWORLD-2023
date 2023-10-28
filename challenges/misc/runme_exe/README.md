@@ -1,4 +1,4 @@
-# runeme_exe
+# runme_exe
 
 - 作者：13m0n4de
 - 参考：MoeCTF 2023
