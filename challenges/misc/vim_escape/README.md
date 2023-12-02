@@ -4,7 +4,7 @@
 - 参考：[TokyoWesterns CTF 4th 2018](https://ctftime.org/event/651)
 - 难度：Medium
 - 分类：PPC
-- 镜像：[svuctf-helloworld-2023/nc](https://ghcr.io/svuctf/svuctf-helloworld-2023/nc)
+- 镜像：[svuctf-helloworld-2023/vim_escape](https://ghcr.io/svuctf/svuctf-helloworld-2023/vim_escape)
 - 端口：7681
 
 ## 题目描述
